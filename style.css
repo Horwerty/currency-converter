@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap');
+
+* {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+}
+
+body {
+      width: 100%;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 1rem;
+      background-color: #de6622;
+}
+
+.container {
+      max-width: 300px;
+      border-radius: 10px;
+      margin: 0.3rem;
+}
+
+.container :hover {
+      transform: scale(1.01);
+      transition: ease 1s;
+}
+
+img {
+      width: 100%;
+      height: 50%;
+      border-radius: 10px 10px 0 0;
+      object-fit:fill;
+      display: block;
+}
+
+.details {
+      padding: 10px;
+      background-color: #fff;
+      border-radius: 0 0 10px 10px;
+}
+
+span i {
+      color: #de6622;
+}
+
+.namePrice {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+}
+
+.rate {
+      display: inline-block;
+      padding: 4px 12px;
+      color: #fff;
+      background-color: #de6622;
+}
+
+.buyNow {
+      display: inline-block;
+      background-color: rgba(222, 102, 34, 0.2);
+      border: none;
+      padding: 8px 16px;
+      color: #c45311;
+      border-radius: 2rem;
+      margin-top: 0.5rem;
+      cursor: pointer;
+      
+}
+
+button :hover {
+      transform: scale(1.03);
+      transition: all;
+      background-color: #c36026;
+      color: #fff;
+      cursor: pointer;
+}
+
+h3 {
+      font-family: 'Oleo Script Swash Caps';
+      font-size: 1rem;
+}
+
+.para {
+      margin-top: 0.5rem;
+      opacity: 0.7;
+}
+
+.converter {
+      background-color: #fff;
+      width: 300px;
+      border-radius: 10px;
+      box-shadow: 2px 4px 5px;
+}
+
+#board {
+      text-align: center;
+      font-size: 1rem;
+      margin: 2rem 0;
+}
+
+#enteries {
+      margin: 0.5rem;
+      display: flex;
+      flex-direction:row ;
+}
+
+.divA {
+      margin: 2.5em 0;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+.divB {
+      margin: 2.5rem 0;
+      margin-left: 0.5em;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+}
+
+label {
+      padding-top: 13px;
+      font-size: 0.7rem;
+}
+
+input {
+      height: 2rem;
+      width: 8rem;
+      border-radius: 5px;
+      padding-left: 5px;
+}
+
+select {
+      height: 2rem;
+      border-radius: 5px;
+      cursor: pointer;
+}
+
+#convBtn button {
+      margin-bottom: 3em;
+      height: 2em;
+      margin-left: 0.5rem;
+      width: 280px;
+      cursor: pointer;
+      background-color: red;
+      color: white;
+      border: none;
+}
+
+#convBtn button:hover {
+      transition: all ease 1s;
+      background-color: green;
+      border: none;
+}
+
+.modals {
+      width: 290px;
+      box-shadow: 2px 3px 4px;
+      height: 25vh;
+      display: none;
+      position: fixed;
+      padding-left: 0;
+      margin-left: 0;
+      margin-right: 5px;
+      z-index: 1;
+      background-color: rgba(128, 128, 128, 0.944);
+}
+
+.modalContent > button {
+      margin-left:90% ;
+      font-size: 1.5rem;
+      width: 1.8rem;
+      border: none;
+      background-color: red;
+      color: #fff;
+      border-bottom-left-radius: 3px;
+}
+
+.modalContent > p {
+      padding-top: 2rem;
+      font-size: 2rem;
+      text-align: center;
+      font-family: 'Oleo Script Swash Caps';
+}
+
+
+@media only screen and (min-width: 1024px) {
+      .cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: auto;
+      }
+}
